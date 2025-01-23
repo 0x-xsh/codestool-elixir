@@ -4,7 +4,7 @@ defmodule Dictionary do
     |>  File.read!()
     |> String.split(~r/\n/, trim: true)
 
-    
+
   def random_word() do
     @word_list
     |>Enum.random()
@@ -19,6 +19,7 @@ defmodule Dictionary do
     str_split = String.split(str, ",", trim: true)
     str_chars = String.graphemes(str)
     str_int   = String.to_charlist("olá")
+    
     str_reverse = String.reverse(str)
 
     {str_split, str_chars, str_int, str_reverse}
