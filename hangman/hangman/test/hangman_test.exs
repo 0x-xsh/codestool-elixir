@@ -19,6 +19,7 @@ test "new game returns correct word" do
   assert game.game_state == :initializing
   assert game.letters == ["w", "o", "m", "b", "a", "t"]
 
+  
 end
 
 
