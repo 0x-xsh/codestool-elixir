@@ -22,6 +22,13 @@ test "new game returns correct word" do
 end
 
 
+test "lower case in the game letters" do
+  game = Game.new_game("wombat")
+  assert Enum.all?(game.letters, fn letter -> String.match?(letter, ~r/[a-z]/)
+
+end)
+end
+
 
 
 end
