@@ -14,8 +14,6 @@ alias Hangman.Impl.Game
 
 }
 
-
-
 @spec new_game() :: game
 defdelegate new_game, to: Game
 
