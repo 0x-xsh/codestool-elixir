@@ -1,25 +1,11 @@
 defmodule Dictionary do
+  # ...existing code...
 
-  @word_list "assets/words.txt"
-    |>  File.read!()
-    |> String.split(~r/\n/, trim: true)
+  defdelegate start(), to: Dictionary.Impl.WordList
+  defdelegate random_word(word_list), to: Dictionary.Impl.WordList
 
-
-  def random_word() do
-    @word_list
-    |>Enum.random()
-
+  def random_word do
+    word_list = start()
+    random_word(word_list)
   end
-
-
-
 end
-
-
-
-
-
-
-
-
-IO.inspect Dictionary.random_word()

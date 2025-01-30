@@ -29,13 +29,16 @@ defmodule Exos do
   def swap_tuple({a, b}) do
     {b, a}
 
+
+
+
   end
 
   def is_tuple_param_same({a, a}) do
     true
   end
 
-  def is_tuple_param_same({a, b}) do
+  def is_tuple_param_same({_a, _b}) do
     false
   end
 

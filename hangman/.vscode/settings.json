@@ -1,0 +1,7 @@
+{
+  "elixirLS.projectDir": "hangman",
+  "files.associations": {
+    "*.ex": "elixir",
+    "*.exs": "elixir"
+  }
+} 
