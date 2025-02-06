@@ -3,5 +3,10 @@
   "files.associations": {
     "*.ex": "elixir",
     "*.exs": "elixir"
+  },
+  "editor.formatOnSave": true,
+  "[elixir]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "JakeBecker.elixir-ls"
   }
-} 
+}
